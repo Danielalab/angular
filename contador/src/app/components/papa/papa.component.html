@@ -1,0 +1,5 @@
+<button (click)="restar()">-</button>
+<span>{{ valor }}</span>
+<button (click)="sumar()">+</button>
+<br>
+<app-hijo [numero]="valor" (cambiarValor)="valor = $event"></app-hijo>
