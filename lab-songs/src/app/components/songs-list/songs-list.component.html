@@ -1,0 +1,5 @@
+<section>
+  <app-song [song]="song" (changeSongsList)="songs = showSongs($event)"
+    *ngFor="let song of songs">
+  </app-song>
+</section>

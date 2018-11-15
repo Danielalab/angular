@@ -1,0 +1,16 @@
+<mat-grid-list cols="5" rowHeight="50px" role="list" 
+  class="mat-typography hover animated fadeIn fast">
+  <mat-grid-tile role="listitem" colspan="2" rowspan="1">{{ song.name }}</mat-grid-tile>
+  <mat-grid-tile role="listitem" colspan="2" rowspan="1">
+    <button mat-icon-button color="accent"
+      (click)="like(song.id)">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button mat-icon-button color="warn" class="m-button-icon"
+      (click)="dislike(song.id)">
+      <mat-icon aria-label="Example icon-button with a heart icon">thumb_down</mat-icon>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{ song.votes }}</mat-grid-tile>
+</mat-grid-list>
+

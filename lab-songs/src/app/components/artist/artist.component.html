@@ -1,0 +1,22 @@
+<mat-grid-list cols="5" rowHeight="250px" role="list" 
+  class="mat-typography hover animated fadeIn">
+  <mat-grid-tile colspan="1" rowspan="1">
+    <button mat-icon-button color="primary" (click)="changeArtist(false)">
+      <mat-icon aria-label="icon-button with a heart icon">arrow_back_ios</mat-icon>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" rowspan="1">
+    <img width="100%" [src]="artistImage" alt="">
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <button mat-icon-button color="primary" (click)="changeArtist(true)">
+      <mat-icon aria-label="icon-button with a heart icon">arrow_forward_ios</mat-icon>
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="5" class="mat-typography">
+  <mat-grid-tile colspan="5">
+    <h3>{{ nameArtist | uppercase }}</h3>
+  </mat-grid-tile>
+</mat-grid-list>
+<app-songs-list [songs]="songs"></app-songs-list>

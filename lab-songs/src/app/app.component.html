@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <!-- contenido de menu -->
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p class="mat-typography title">
+      <button mat-button (click)="sidenav.toggle()"><mat-icon aria-label="icon-button">menu</mat-icon></button>
+      RANKING SONGS
+    </p>
+    <app-artist></app-artist>
+  </mat-sidenav-content>
+</mat-sidenav-container>
